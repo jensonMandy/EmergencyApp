@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metaphor.root.emergencyapp.MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locationControllerGPS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:gravity="center"
+        android:text="Coordinates"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/locationControllerGPS"
+        style="@android:style/DeviceDefault.Light.ButtonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/red_button_draw"
+        android:elevation="@android:dimen/app_icon_size"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:shadowColor="#dddddd"
+        android:text="Emergency"
+        android:textColor="#ffffff"
+        android:textSize="21dp"
+        android:textStyle="bold"/>
+        <!--android:background="@color/common_google_signin_btn_text_light"-->
+        <!--android:textColor="@color/colorPrimaryDark"/>-->
+
+    <Spinner
+        android:id="@+id/select_emergency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48sp"
+        android:layout_below="@+id/sel_em"
+        android:visibility="invisible"
+        ></Spinner>
+    <TextView
+        android:id="@+id/sel_em"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Emergency"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        />
+</RelativeLayout>
